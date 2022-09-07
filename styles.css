@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Style dla kolumn */
+.column {
+    float: left;
+    padding: 10px;
+
+
+}
+
+.column.sidebar{
+    width: 25%;
+}
+
+.column.middle {
+width: 50%;
+
+}
+/* dla stopki */
+.footer{
+    background-color: #8C8303;
+    padding: 10px;
+    text-align: center;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* dla nawigacji */
+.navigation{
+background-color: red;
+overflow: hidden;
+
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    /* display: inline-block; */
+    float: left;
+}
+
+.navigation a:hover {
+    background-color: orange;
+}
+
+.header {
+    background-color: #D9A50B;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #124019;
+}
+
+header {
+    background-color: #124019;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    text-indent: 16px;
+    margin-top: 10px;
+
+}
+/* lista zadań */
+ul {
+    list-style-type: none ;
+}
+
+li {
+    padding: 5px 15px;
+    color: #444;
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 3px;
+}
+
+.ready {
+    text-decoration: line-through;
+
+}
+
+.ready button.complete{
+    background-color: green;
+}
+
+#bottom {
+    background-color: #124019;
+    height: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* dla przycisków */
+
+button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+
+}
+
+.buttons {
+    float: right;
+}
+
+.buttons button {
+    float: right;
+    border: none;
+}
+
+.remove{
+    background-image: url("public/img/delete.png");
+    background-size: contain;
+    margin-left: 5px;
+}
+
+.complete{
+    background-image: url("public/img/complete.png");
+    background-size: contain;
+    /* margin-left: 5px; */
+    border-radius: 15px;
+}
+
+/* Styl dla różnych urządzeń mobilnych */
+
+@media screen and (max-width: 600px){
+
+    .column.sidebar, .column.middle{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 601px){
+
+    .footer{
+        position: fixed;
+    }
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navigation">
+    <a href="index.html">Home</a>
+    <a href="#">Jak to działa ?</a>
+    <!-- <a href="/third-page.html">Link to thrid page</a> -->
+</div>
+<div class="header">
+    <h1>Jak działa aplikacja</h1>
+    <p>Opisanie w skrócie działania aplikacji</p>
+</div>
+
+<div class="row">
+    
+    <div class="column sidebar">
+        <h2>Jak działa lista</h2>
+        <p>Lista typu TO DO w tym przypadku działą w oparciu o Local Storage. Nie działą na starych przeglądarkach nie obsługujących Local Storage np. wszystkie przeglądarki IE oraz Edge uruchomiony w trybie IE. Edge, Chrome czy Firefox posiadją Local Storage w efekcie czego list ana nich działa.</p>
+    </div>
+    
+    <div class="column middle">
+        <header>
+        <h2>To Do List</h2>
+        <p>Przykładowa lista</p>
+        <input type="text" placeholder="Type a task to do and press enter" name="task" id="task">
+    </header>
+        
+        <ul> 
+        <li class="ready">
+            First task
+            <div class="buttons">
+                <button class="remove">
+    
+                </button>
+    
+                <button class="complete">
+    
+                </button>
+            </div>
+        </li>
+        <li>
+            Second task
+            <div class="buttons">
+                <button class="remove">
+    
+                </button>
+    
+                <button class="complete">
+                    
+                </button>
+        </li>
+        <li>
+            Third task
+            <div class="buttons">
+                <button class="remove">
+    
+                </button>
+    
+                <button class="complete">
+                    
+                </button>
+        </li>    
+        </ul>
+        <div id="bottom"></div>
+    </div>
+    
+    <div class="column sidebar">
+        <h2>Local Storage</h2>
+        <p>Local Storage to rodzaj "magazynu danych" w przeglądarce. Dane zapisują się w pamięci przeglądarki osoby odwiedzającej i korzystającej z danej aplikacji webowej. Są one zachowywane w pamięci nawet po jej zamknięciu. Chyba, że użytkownik zdecyduje się na wyczyszczenie danych. </p>
+    </div>
+
+</div>
+
+<div style="clear: both"> </div>
+
+<div class="footer"><p>Footer &copy; Company name</p></div>
+
+
+
+</body>
+</html>
